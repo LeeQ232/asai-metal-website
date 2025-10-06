@@ -47,46 +47,46 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-20 relative">
+    <section id="benefits" className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-12 md:py-16 lg:py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 via-transparent to-red-900/5"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-white" style={{fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif', fontSize: '48px', fontWeight: '800', lineHeight: '1.1'}}>
+        <h2 className="font-bold text-center mb-8 md:mb-12 lg:mb-16 text-white">
           Kenapa PT. Asai Metal?
         </h2>
-        <h3 className="text-red-400 font-bold text-xl mb-8 text-center" style={{fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif'}}>
+        <h3 className="text-red-400 font-bold text-center mb-8 md:mb-12 text-sm md:text-base lg:text-lg max-w-4xl mx-auto">
           Jasa Otomasi Pabrik Indonesia • Integrator Robot Industri Fanuc, ABB, Yaskawa, KUKA • Konversi Mesin Manual ke Otomatis
         </h3>
 
-        <div className="space-y-20">
+        <div className="space-y-12 md:space-y-16 lg:space-y-20">
           {/* Block 1: Text Left, Image Right */}
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-mobile-stack">
             <div className="flex-1 text-left">
-              <div className="flex items-center mb-6">
-                <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-white font-bold text-sm">✓</span>
+              <div className="flex items-center mb-4 md:mb-6">
+                <div className="w-6 h-6 md:w-8 md:h-8 bg-red-500 rounded-full flex items-center justify-center mr-3 md:mr-4 flex-shrink-0">
+                  <span className="text-white font-bold text-xs md:text-sm">✓</span>
                 </div>
-                <h4 className="text-2xl md:text-3xl font-bold text-white" style={{fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif'}}>
+                <h4 className="font-bold text-white text-lg md:text-xl lg:text-2xl">
                   Integrasi Mesin & Robot <span className="text-red-400">Lintas Brand — Tanpa Batasan</span>
                 </h4>
               </div>
-              <div className="mb-4">
-                <p className="text-red-400 font-bold text-lg" style={{fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif'}}>
+              <div className="mb-3 md:mb-4">
+                <p className="text-red-400 font-bold text-sm md:text-base lg:text-lg">
                   Semua brand, satu sistem.
                 </p>
               </div>
-              <p className="text-gray-300 text-lg leading-relaxed" style={{fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif'}}>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base lg:text-lg">
                 Kami ahli dalam <strong className="text-white">integrasi mesin dan robot lintas brand</strong>. Mau pakai <strong className="text-red-400">Siemens, Mitsubishi, Fanuc, Yaskawa, Omron, ABB, atau KUKA</strong>? Semua bisa kami satukan dalam satu sistem otomasi yang <strong className="text-white">terintegrasi, stabil, dan mudah digunakan</strong>.<br/>
                 Dengan pengalaman implementasi <strong className="text-red-400">100+ robot di Chemco</strong> dalam waktu singkat, kami membuktikan bahwa <strong className="text-white">tidak ada batasan brand</strong> untuk membuat pabrik Anda berjalan otomatis.
               </p>
             </div>
             <div className="flex-1">
-              <div className="relative group max-w-md mx-auto">
+              <div className="relative group max-w-sm md:max-w-md mx-auto">
                 <img
                   src={benefits[0].image}
                   alt={benefits[0].title}
-                  className="w-full h-64 object-cover rounded-2xl shadow-2xl group-hover:shadow-red-500/20 transition-all duration-500 transform group-hover:scale-105"
+                  className="w-full h-48 md:h-56 lg:h-64 object-cover rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl hover-lift"
                 />
-                <div className="absolute inset-0 bg-red-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-red-500/10 rounded-xl md:rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>
@@ -291,19 +291,10 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className="text-center mt-20">
+        <div className="text-center mt-12 md:mt-16 lg:mt-20">
           <a
             href={generateWhatsAppLink(generateWhatsAppMessage('benefits_efficiency'), 'benefits_cta')}
-            className="inline-block px-12 py-6 rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-500/25"
-            style={{
-              fontFamily: 'Montserrat, Roboto, Helvetica Neue, Arial, sans-serif',
-              fontSize: '18px',
-              fontWeight: '700',
-              textTransform: 'uppercase',
-              background: 'linear-gradient(135deg, #DC2626 0%, #FB4E4E 100%)',
-              color: '#FFFFFF',
-              boxShadow: '0 4px 15px rgba(220, 38, 38, 0.3)'
-            }}
+            className="btn-responsive bg-gradient-to-r from-red-600 to-red-500 text-white font-bold uppercase hover-lift shadow-lg"
             target="_blank"
             rel="noopener noreferrer"
           >
