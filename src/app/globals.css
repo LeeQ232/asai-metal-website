@@ -221,15 +221,15 @@ section {
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px; /* Generous desktop width */
-  max-width: 90vw; /* Responsive max width */
+  width: 320px; /* More reasonable desktop width */
+  max-width: 85vw; /* Responsive max width */
   height: 100vh;
   background: #111;
   color: white;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1000;
-  padding: 2rem; /* Spacious desktop padding */
+  padding: 1.5rem; /* Reasonable desktop padding */
 }
 
 @media (max-width: 1023px) {

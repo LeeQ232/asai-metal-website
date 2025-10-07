@@ -16,15 +16,15 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
           <img
             src="/logo-asai.jpg"
             alt="PT. ASAI METAL Logo"
-            className="h-12 w-auto mr-3"
+            className="h-8 w-auto mr-2"
           />
-          <span className="text-red-600 font-bold text-xl">PT. ASAI METAL</span>
+          <span className="text-red-600 font-bold text-lg">PT. ASAI METAL</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,11 +65,11 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <div className="flex justify-between items-center mb-8">
-          <span className="text-white font-bold text-xl">Menu</span>
+        <div className="flex justify-between items-center mb-6">
+          <span className="text-white font-bold text-lg">Menu</span>
           <button
             onClick={closeMobileMenu}
-            className="text-white text-3xl hover:text-red-400 transition-colors"
+            className="text-white text-2xl hover:text-red-400 transition-colors"
             aria-label="Close menu"
           >
             ×
@@ -78,20 +78,20 @@ export default function Header() {
 
         <nav>
           <ul>
-            <li><Link href="#hero" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Home</Link></li>
-            <li><Link href="#proof" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Klien Kami</Link></li>
-            <li><Link href="#benefits" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Kenapa Kami</Link></li>
-            <li><Link href="#catalog" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Solusi Otomasi</Link></li>
-            <li><Link href="/stock" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Stok Mesin</Link></li>
-            <li><Link href="#authority" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Proyek Kami</Link></li>
-            <li><Link href="#cta" className="block py-4 border-b border-gray-700 text-lg hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Konsultasi Gratis</Link></li>
+            <li><Link href="#hero" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Home</Link></li>
+            <li><Link href="#proof" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Klien Kami</Link></li>
+            <li><Link href="#benefits" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Kenapa Kami</Link></li>
+            <li><Link href="#catalog" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Solusi Otomasi</Link></li>
+            <li><Link href="/stock" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Stok Mesin</Link></li>
+            <li><Link href="#authority" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Proyek Kami</Link></li>
+            <li><Link href="#cta" className="block py-3 border-b border-gray-700 text-base hover:text-red-400 transition-colors" onClick={closeMobileMenu}>Konsultasi Gratis</Link></li>
           </ul>
         </nav>
 
-        <div className="mt-8 pt-8 border-t border-gray-700">
+        <div className="mt-6 pt-6 border-t border-gray-700">
           <a
             href="https://wa.me/628170968855?text=Saya%20tertarik%20dengan%20layanan%20PT.%20Asai%20Metal"
-            className="block w-full bg-red-600 text-white text-center py-4 rounded-lg hover:bg-red-700 transition-colors text-lg font-semibold"
+            className="block w-full bg-red-600 text-white text-center py-3 rounded-lg hover:bg-red-700 transition-colors text-base font-semibold"
             onClick={closeMobileMenu}
           >
             Hubungi Kami via WhatsApp
