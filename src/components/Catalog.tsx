@@ -30,21 +30,21 @@ export default function Catalog() {
   ];
 
   return (
-    <section id="catalog" className="bg-gradient-to-br from-black via-gray-900 to-purple-900 py-12 md:py-16 lg:py-20">
-      <div className="container mx-auto px-4">
+    <section id="catalog" className="bg-gradient-to-br from-black via-gray-900 to-purple-900 py-20">
+      <div className="container mx-auto px-6">
         {/* Subheader */}
-        <div className="text-center mb-6 md:mb-8">
-          <span className="inline-block px-4 py-2 md:px-6 bg-red-500/20 text-red-400 font-bold text-xs md:text-sm uppercase tracking-wider rounded-full border border-red-500/30">
+        <div className="text-center mb-10">
+          <span className="inline-block px-8 py-3 bg-red-500/20 text-red-400 font-bold text-sm uppercase tracking-wider rounded-full border border-red-500/30">
             BLUEPRINT OTOMASI PABRIK ANDA
           </span>
         </div>
 
         {/* Main Title */}
-        <h3 className="font-bold text-center mb-8 md:mb-12 lg:mb-16 text-white">
+        <h3 className="font-bold text-center mb-16 text-white">
           Solusi Otomasi Kami
         </h3>
 
-        <div className="space-y-8 md:space-y-12 lg:space-y-16">
+        <div className="space-y-16">
           {/* Machine & Robot Integration */}
           <div className="flex-mobile-stack">
             <div className="flex-1 space-y-3 md:space-y-4">
@@ -193,7 +193,7 @@ export default function Catalog() {
         </div>
 
 
-        <div className="text-center mt-8 md:mt-12 lg:mt-16">
+        <div className="text-center mt-16">
           <div className="mb-4 md:mb-6">
             <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-sm md:text-base lg:text-lg">
               Apapun kebutuhan Anda — <strong className="text-red-400">mesin, robot, otomasi penuh, atau konversi mesin lama</strong> — PT. Asai Metal siap menjadi <strong className="text-white">satu-satunya partner otomasi yang Anda butuhkan</strong>.
