@@ -44,7 +44,7 @@ export default function Catalog() {
           Solusi Otomasi Kami
         </h3>
 
-        <div className="space-y-12 md:space-y-16 lg:space-y-20">
+        <div className="space-y-8 md:space-y-12 lg:space-y-16">
           {/* Machine & Robot Integration */}
           <div className="flex-mobile-stack">
             <div className="flex-1 space-y-3 md:space-y-4">
@@ -193,7 +193,7 @@ export default function Catalog() {
         </div>
 
 
-        <div className="text-center mt-12 md:mt-16 lg:mt-20">
+        <div className="text-center mt-8 md:mt-12 lg:mt-16">
           <div className="mb-4 md:mb-6">
             <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-sm md:text-base lg:text-lg">
               Apapun kebutuhan Anda — <strong className="text-red-400">mesin, robot, otomasi penuh, atau konversi mesin lama</strong> — PT. Asai Metal siap menjadi <strong className="text-white">satu-satunya partner otomasi yang Anda butuhkan</strong>.

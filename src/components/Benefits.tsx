@@ -47,17 +47,17 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-12 md:py-16 lg:py-20 relative">
+    <section id="benefits" className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-8 md:py-12 lg:py-16 relative">
       <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 via-transparent to-red-900/5"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="font-bold text-center mb-8 md:mb-12 lg:mb-16 text-white">
+        <h2 className="font-bold text-center mb-6 md:mb-8 lg:mb-10 text-white">
           Kenapa PT. Asai Metal?
         </h2>
-        <h3 className="text-red-400 font-bold text-center mb-8 md:mb-12 text-sm md:text-base lg:text-lg max-w-4xl mx-auto">
+        <h3 className="text-red-400 font-bold text-center mb-6 md:mb-8 text-xs md:text-sm lg:text-base max-w-4xl mx-auto">
           Jasa Otomasi Pabrik Indonesia • Integrator Robot Industri Fanuc, ABB, Yaskawa, KUKA • Konversi Mesin Manual ke Otomatis
         </h3>
 
-        <div className="space-y-12 md:space-y-16 lg:space-y-20">
+        <div className="space-y-8 md:space-y-12 lg:space-y-16">
           {/* Block 1: Text Left, Image Right */}
           <div className="flex-mobile-stack">
             <div className="flex-1 text-left">
@@ -291,7 +291,7 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className="text-center mt-12 md:mt-16 lg:mt-20">
+        <div className="text-center mt-8 md:mt-12 lg:mt-16">
           <a
             href={generateWhatsAppLink(generateWhatsAppMessage('benefits_efficiency'), 'benefits_cta')}
             className="btn-responsive bg-gradient-to-r from-red-600 to-red-500 text-white font-bold uppercase hover-lift shadow-lg"
